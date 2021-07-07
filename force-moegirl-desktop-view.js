@@ -2,7 +2,7 @@
 // @name             强制萌娘百科桌面版
 // @namespace        https://github.com/qwq233/force-moegirl-desktop-view
 // @description      强制萌娘百科桌面版 Google搜出来的全是手机版页面 萌娘那边也不会自动给跳转orz
-// @version          1.0.1
+// @version          1.0.2
 // @match            *zh.moegirl.org/*
 // @match            *mzh.moegirl.org/*
 // @match            *zh.moegirl.org.cn/*
@@ -22,8 +22,8 @@
         console.log(url)
         return url;
     }
-    url = window.location.href;
-    newUrl = replace_url(url);
+    var url = window.location.href;
+    var newUrl = replace_url(url);
     if (url != newUrl) {
         location.href = newUrl;
     }
